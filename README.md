@@ -60,3 +60,18 @@ This project aims to analyze airplane crash data to understand trends, patterns,
 - **File**: `data/Airplane_Crashes_and_Fatalities_Since_1908.csv`
 - **Source**: [Kaggle - Airplane Crashes and Fatalities](https://www.kaggle.com/datasets/nayansubedi1/airplane-crashes-and-fatalities-upto-2023)
 - **Description**: Contains information on airplane crashes, including dates, locations, operator, aboard, fatalities, and more.
+
+## Learning Data
+
+- **File**: `data/learning_data.csv`
+- **Description**: Contains data columns for training a model to predict survivability in airplane crashes. The dataset includes vectorized columns for features such as region, time of the crash, flight category, and the cause of the crash.
+  
+- **Data Format**:
+    - `Date`: Date of the crash in `mm/dd/yyyy` format (e.g., `01/01/1999`).
+    - `Region_Vector`: A vector representing the region of the crash. Example: `[0, 0, 0, 0, 0, 0, 0]` where `['America', 'Europe', 'Unknown', 'Other', 'Oceania', 'Asia', 'Africa']`.
+    - `Aboard`: The number of people aboard the aircraft (e.g., `1.0`).
+    - `Fatalities`: The number of fatalities in the crash (e.g., `1.0`).
+    - `Survives`: A binary value indicating if anyone survived the crash. `1` if survived, `0` if not.
+    - `Time_Vector`: A vector representing the time of the crash. Example: `[0, 0, 0, 0, 0]` where `['Unknown', 'Morning', 'Afternoon', 'Evening', 'Night']`.
+    - `Category_Vector`: A vector representing the category of the flight. Example: `[0, 0, 0, 0, 0, 0]` where `['Military', 'Private', 'Commercial', 'Government', 'Other', 'Unknown']`.
+    - `Summary_Vector`: A vector representing the cause of the crash. Example: `[0, 0, 0, 0, 0, 0, 0]` where `['Visibility Issues', 'Weather-Related', 'Mechanical Problems', 'Emergency Landing', 'Human Factors', 'Unknown Causes', 'First or Second War']`.
