@@ -3,7 +3,6 @@
 ## Team Members
 * Anna Borosh
 * Ivan Kliuchyshche
-* Hans Eduard Säre
 
 ## Project Description
 
